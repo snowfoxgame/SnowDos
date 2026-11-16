@@ -1,0 +1,7 @@
+SnowDo's is an offline-first, privacy-friendly task and habit planner built with Jetpack Compose and Material 3.
+
+Features:
+- Daily, recurring, and priority-based tasks with score tracking
+- Offline-first local storage with no ads or tracking
+- Dynamic seasonal, retro 8-bit, and live-animated themes with customizable frosted glass UI
+- Homescreen widget & dynamic app icon support

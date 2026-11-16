@@ -1,0 +1,1 @@
+Offline-first task & habit planner with dynamic themes and frosted glass UI.

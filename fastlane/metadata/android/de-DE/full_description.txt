@@ -1,0 +1,7 @@
+SnowDo's ist ein datenschutzfreundlicher Offline-First Aufgaben- und Gewohnheitsplaner mit Jetpack Compose und Material 3.
+
+Funktionen:
+- Aufgaben, Routinen und Erinnerungen mit Score-Verlauf
+- 100 % lokal & offline-first ohne Werbung oder Tracking
+- Dynamische Saison-, 8-Bit-Pixel- und Live-Themes mit anpassbarem Frosted-Glass-Design
+- Homescreen-Widget und dynamisches App-Icon

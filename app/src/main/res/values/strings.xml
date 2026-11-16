@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SnowDo\'s</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_stats">Stats</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Common Actions & Labels -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_close">Close</string>
+    <string name="action_done">Done</string>
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+    <string name="action_apply">Apply</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_open">Open</string>
+    <string name="action_check">Review</string>
+    <string name="action_allow">Allow</string>
+    <string name="label_active">Active</string>
+    <string name="label_minutes_short">%1$d min</string>
+    <string name="label_hours_short">%1$d hr</string>
+    <string name="label_minutes_full">%1$d minutes</string>
+
+    <!-- Relative Dates -->
+    <string name="date_today">Today</string>
+    <string name="date_tomorrow">Tomorrow</string>
+
+    <!-- Priorities -->
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+
+    <!-- Recurrence Rules -->
+    <string name="recurrence_none">One-time</string>
+    <string name="recurrence_every_few_hours">Every 3 hrs</string>
+    <string name="recurrence_daily">Daily</string>
+    <string name="recurrence_every_2_days">Every 2 days</string>
+    <string name="recurrence_weekly">Weekly</string>
+
+    <!-- Tasks Screen & Editor -->
+    <string name="tasks_title">Tasks</string>
+    <string name="tasks_summary_counts">%1$d open · %2$d done</string>
+    <string name="tasks_search_placeholder">Search tasks…</string>
+    <string name="tasks_search_cd">Search</string>
+    <string name="tasks_clear_search_cd">Clear search</string>
+    <string name="tasks_new_cd">New task</string>
+    <string name="tasks_filter_active">Open</string>
+    <string name="tasks_filter_completed">Done</string>
+    <string name="tasks_filter_all">All</string>
+    <string name="tasks_empty_filtered">No matching tasks found.</string>
+    <string name="tasks_empty_all">No tasks yet.\nTap + to get started.</string>
+    <string name="tasks_proof_title">Confirmation required</string>
+
+    <string name="task_card_complete_cd">Mark task complete</string>
+    <string name="task_card_snooze_cd">Snooze task</string>
+    <string name="task_card_edit_cd">Edit task</string>
+    <string name="task_card_dismiss_ignored_cd">Dismiss task (ignored)</string>
+    <string name="task_card_delete_cd">Delete task</string>
+    <string name="task_card_due_short">Due · %1$s</string>
+    <string name="task_card_due_full">Due: %1$s</string>
+    <string name="task_card_snoozed_until">Snoozed until %1$s · %2$dx</string>
+    <string name="task_card_snoozed_count">Snoozed %1$dx</string>
+    <string name="task_status_completed">Done</string>
+    <string name="task_status_ignored">Ignored</string>
+    <string name="task_status_missed">Missed</string>
+
+    <string name="task_editor_new_title">New task</string>
+    <string name="task_editor_edit_title">Edit task</string>
+    <string name="task_editor_title_label">Title*</string>
+    <string name="task_editor_title_placeholder">What needs doing?</string>
+    <string name="task_editor_notes_label">Notes (optional)</string>
+    <string name="task_editor_priority_label">Priority</string>
+    <string name="task_editor_due_section">Due date &amp; reminder</string>
+    <string name="task_editor_due_none">No due date set</string>
+    <string name="task_editor_in_one_hour">In 1 hour</string>
+    <string name="task_editor_pick_datetime">Pick date &amp; time</string>
+    <string name="task_editor_send_reminder">Send reminder when due</string>
+    <string name="task_editor_recurrence_label">Repeat</string>
+    <string name="task_editor_pick_time_title">Select time</string>
+
+    <string name="snooze_dialog_title">Snooze task</string>
+    <string name="snooze_dialog_message">How long should “%1$s” be snoozed?</string>
+    <string name="snooze_option_default_tag">%1$s (Default)</string>
+    <string name="snooze_action_default">Default (%1$d min)</string>
+
+    <!-- Tasks Feedback & Domain Errors -->
+    <string name="tasks_msg_not_found">Task not found</string>
+    <string name="tasks_msg_created">Task created</string>
+    <string name="tasks_msg_updated">Task updated</string>
+    <string name="tasks_msg_save_failed">Could not save task</string>
+    <string name="tasks_msg_completed_points">Done (+%1$d)</string>
+    <string name="tasks_msg_completed_recurring">Done (+%1$d) · Next cycle scheduled</string>
+    <string name="tasks_msg_snoozed">Snoozed for %1$d min</string>
+    <string name="tasks_msg_snooze_failed">Could not snooze task</string>
+    <string name="tasks_msg_marked_ignored">Marked as ignored (%1$d)</string>
+    <string name="tasks_msg_deleted">Task deleted</string>
+    <string name="error_empty_title">Title cannot be empty</string>
+    <string name="error_task_not_actionable">Completed tasks cannot be snoozed</string>
+
+    <!-- Stats Screen & Score Gauge -->
+    <string name="stats_title">Stats</string>
+    <string name="stats_counter_done">Done</string>
+    <string name="stats_counter_missed">Missed</string>
+    <string name="stats_counter_ignored">Ignored</string>
+    <string name="stats_history_title">Activity &amp; score history</string>
+    <string name="stats_history_empty">No activity recorded yet.</string>
+    <string name="stats_history_reset">Reset</string>
+    <string name="stats_event_delete_cd">Delete entry</string>
+    <string name="stats_reset_dialog_title">Reset statistics?</string>
+    <string name="stats_reset_dialog_message">Do you really want to delete all statistic entries? Existing tasks will remain untouched.</string>
+    <string name="stats_reset_confirm">Delete all</string>
+    <string name="stats_event_completed">Done</string>
+    <string name="stats_event_missed">Missed</string>
+    <string name="stats_event_ignored">Ignored</string>
+    <string name="stats_event_snoozed">Snoozed</string>
+    <string name="stats_event_created">Created</string>
+    <string name="score_gauge_percent">%1$d%%</string>
+    <string name="score_gauge_empty_dash">—</string>
+    <string name="score_gauge_net_summary">Reliability score · Net: %1$s pts</string>
+    <string name="score_gauge_no_data">No scored tasks yet</string>
+
+    <!-- Account Stub -->
+    <string name="account_title">Account – Coming soon</string>
+    <string name="account_unauthenticated">Not signed in yet.</string>
+    <string name="account_authenticated">Signed in as %1$s</string>
+    <string name="account_stub_message">Account sign-in, cloud backup, and device sync are coming in a future update.</string>
+    <string name="account_sync_title">Storage &amp; sync status</string>
+    <string name="account_sync_local_only">Offline-first (stored locally on this device)</string>
+    <string name="account_sync_idle">Ready to sync</string>
+    <string name="account_sync_syncing">Syncing…</string>
+    <string name="account_sync_error">Sync error</string>
+    <string name="account_sign_in_cta">Sign in (coming soon)</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_account">Account</string>
+    <string name="settings_section_tasks_reminders">Tasks &amp; Reminders</string>
+    <string name="settings_section_reminders">Reminders &amp; Focus</string>
+    <string name="settings_notifications_title">Notifications</string>
+    <string name="settings_notifications_on">Task reminders enabled</string>
+    <string name="settings_notifications_off">Task reminders muted</string>
+    <string name="settings_lead_time_title">Reminder lead time</string>
+    <string name="settings_lead_time_at_due_summary">At due time (0 min)</string>
+    <string name="settings_lead_time_before_summary">%1$d min before due time</string>
+    <string name="settings_lead_time_at_due_option">At due time (0 min)</string>
+    <string name="settings_lead_time_before_option">%1$d min before</string>
+    <string name="settings_default_snooze_title">Default snooze duration</string>
+    <string name="settings_exact_alarm_title">Exact alarms restricted</string>
+    <string name="settings_exact_alarm_desc">Reminders may be delayed in battery-saving mode. Tap to allow exact alarms in system settings.</string>
+
+    <string name="settings_section_anti_ignore">Anti-Ignore &amp; Score Rules</string>
+    <string name="settings_anti_ignore_title">Anti-Ignore Power (Intensive Mode)</string>
+    <string name="settings_anti_ignore_on">On: Full-screen alarms, sound &amp; strong vibration when due</string>
+    <string name="settings_anti_ignore_off">Off (Default: gentle reminders)</string>
+    <string name="settings_anti_ignore_coming_soon">Experimental &amp; untested – Standard reminders remain active</string>
+    <string name="settings_permissions_title">Check permissions for Intensive Mode</string>
+    <string name="settings_permissions_desc">Tap to grant notifications, exact alarms, or full-screen alarm access.</string>
+    <string name="settings_dismiss_title">On dismiss action (✕)</string>
+    <string name="settings_dismiss_ignored_summary">Mark as ignored (%1$d to %2$d pts)</string>
+    <string name="settings_dismiss_delete_summary">Delete task immediately</string>
+    <string name="settings_dismiss_ignored_option">Count as ignored (%1$d to %2$d pts)</string>
+    <string name="settings_dismiss_delete_option">Delete immediately</string>
+    <string name="settings_grace_title">Grace period before missed</string>
+    <string name="settings_grace_immediate_summary">Immediately when overdue</string>
+    <string name="settings_grace_buffer_summary">%1$d min buffer</string>
+    <string name="settings_grace_immediate_option">Immediately (0 min)</string>
+    <string name="settings_score_rules_title">Score weighting</string>
+    <string name="settings_score_strict_option">Strict (%1$s)</string>
+    <string name="settings_score_standard_option">Standard (%1$s)</string>
+    <string name="settings_score_summary_symmetrical">Prio 1–3: ±%1$d to ±%2$d pts</string>
+    <string name="settings_score_summary_asymmetric">Prio 1–3: +%1$d..+%2$d / %3$d..%4$d pts</string>
+
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_appearance_title">Theme &amp; Design</string>
+    <string name="settings_appearance_bg_hint"> · Custom wallpaper</string>
+    <string name="settings_language_title">Language</string>
+    <string name="settings_language_dialog_title">Choose language</string>
+    <string name="settings_tab_transition_title">Tab transitions</string>
+    <string name="settings_tab_transition_dialog_title">Tab transition style</string>
+    <string name="settings_tab_transition_animated">Animated (Default)</string>
+    <string name="settings_tab_transition_instant">Instant (No animation)</string>
+    <string name="settings_tab_transition_animated_option">Animated (Default: smooth slide &amp; pill)</string>
+    <string name="settings_tab_transition_instant_option">Instant (Switch immediately without animation)</string>
+    <string name="settings_dynamic_icon_title">Match app icon to theme</string>
+    <string name="settings_dynamic_icon_on">Notepad icon matches your active theme preset</string>
+    <string name="settings_dynamic_icon_off">Always use the default app icon</string>
+    <string name="settings_cross_app_sync_title">Sync theme &amp; icon with SnowSplit</string>
+    <string name="settings_cross_app_sync_on">Connected: Themes, backgrounds &amp; icons stay synced</string>
+    <string name="settings_cross_app_sync_off">Paused: Design changes apply to SnowDo\'s only</string>
+    <string name="settings_cross_app_sync_unavailable">SnowSplit not installed or incompatible</string>
+    <string name="settings_reduce_blur_title">Reduce live blur (Battery saver)</string>
+    <string name="settings_reduce_blur_on">Uses fast translucent cards without live GPU blur</string>
+    <string name="settings_reduce_blur_off">Full frosted-glass live blur active</string>
+
+    <string name="settings_section_experimental">Experimental</string>
+    <string name="settings_experimental_badge">Experimental</string>
+    <string name="settings_experimental_subtitle">Preview &amp; lab features — still in testing</string>
+
+    <string name="settings_section_help_info">Help &amp; Info</string>
+    <string name="settings_section_help">Help &amp; Onboarding</string>
+    <string name="settings_replay_onboarding_title">Replay introduction</string>
+    <string name="settings_replay_onboarding_desc">Open the welcome flow and routine template picker</string>
+    <string name="settings_replay_tutorial_title">Restart app tutorial</string>
+    <string name="settings_replay_tutorial_desc">Short interactive spotlight tour of Tasks, Stats, and Settings</string>
+    <string name="settings_app_version_title">App version</string>
+    <string name="settings_app_version_value">SnowDo\'s v%1$s (%2$d)</string>
+
+    <!-- Permissions Dialog -->
+    <string name="permissions_dialog_title">Set up Anti-Ignore Power</string>
+    <string name="permissions_dialog_intro">To ensure full-screen alarms appear reliably over your lock screen (e.g., on Samsung One UI), please enable these permissions:</string>
+    <string name="permissions_notif_title">Notifications</string>
+    <string name="permissions_notif_desc">Required to display task alerts (POST_NOTIFICATIONS).</string>
+    <string name="permissions_exact_title">Exact alarms</string>
+    <string name="permissions_exact_desc">Prevents delays caused by Doze mode (SCHEDULE_EXACT_ALARM).</string>
+    <string name="permissions_fullscreen_title">Full-screen alerts</string>
+    <string name="permissions_fullscreen_desc">Shows urgent alarms over other apps and the lock screen (USE_FULL_SCREEN_INTENT).</string>
+    <string name="permissions_battery_title">Battery optimization (Recommended)</string>
+    <string name="permissions_battery_desc">On Samsung One UI, set battery usage to “Unrestricted” so alarms aren\'t stopped in standby.</string>
+    <string name="permissions_dnd_title">Do Not Disturb exception (Optional)</string>
+    <string name="permissions_dnd_desc">Allows Intensive Mode alarms to break through when Do Not Disturb is active.</string>
+
+    <!-- Appearance Settings & Color Picker -->
+    <string name="appearance_title">Theme &amp; Design</string>
+    <string name="appearance_mode_presets">Presets</string>
+    <string name="appearance_mode_custom">Custom</string>
+    <string name="appearance_category_all">All</string>
+    <string name="appearance_category_normal">Normal</string>
+    <string name="appearance_category_events">Events</string>
+    <string name="appearance_category_playful">Playful</string>
+    <string name="appearance_category_interactive">Interactive</string>
+    <string name="appearance_accent_color">Accent color</string>
+    <string name="appearance_custom_name">Custom (%1$s)</string>
+    <string name="appearance_glass_opacity">Glass effect / transparency</string>
+    <string name="appearance_glass_opacity_desc">Controls the frosted-glass tint across cards, buttons, and the navigation bar.</string>
+    <string name="appearance_bg_title">Background image</string>
+    <string name="appearance_bg_active_desc">Custom background active with automatic dimming for clear contrast.</string>
+    <string name="appearance_bg_default_desc">Default theme background active.</string>
+    <string name="appearance_bg_preview_cd">Active background image</string>
+    <string name="appearance_bg_importing">Loading image…</string>
+    <string name="appearance_bg_pick_cta">Choose wallpaper from gallery</string>
+    <string name="appearance_bg_reset_cta">Reset to default background</string>
+    <string name="appearance_msg_bg_applied">Wallpaper applied</string>
+    <string name="appearance_msg_bg_failed">Could not load background image</string>
+    <string name="appearance_msg_bg_reset">Default background restored</string>
+
+    <string name="color_picker_brightness">Brightness</string>
+    <string name="color_picker_hex_label">Hex color code</string>
+    <string name="color_picker_hex_placeholder">#6750A4</string>
+    <string name="color_picker_hex_hint">Format: #RRGGBB (e.g. #6750A4)</string>
+
+    <!-- Theme Preset Subtitles -->
+    <string name="preset_subtitle_standard">Clean notes &amp; focus</string>
+    <string name="preset_subtitle_winter">Snowflakes &amp; frost</string>
+    <string name="preset_subtitle_halloween">Pumpkins &amp; midnight</string>
+    <string name="preset_subtitle_christmas">Festive pine &amp; holly</string>
+    <string name="preset_subtitle_summer">Beach &amp; ocean breeze</string>
+    <string name="preset_subtitle_autumn">Warm leaves &amp; amber</string>
+    <string name="preset_subtitle_spring">Fresh meadow &amp; blooms</string>
+    <string name="preset_subtitle_easter">Soft pastel &amp; eggs</string>
+    <string name="preset_subtitle_new_year">Midnight &amp; fireworks</string>
+    <string name="preset_subtitle_gaming">Dark LED &amp; controllers</string>
+    <string name="preset_subtitle_8bit_cute">Retro pixels &amp; paws</string>
+    <string name="preset_subtitle_bubbles">Floating touch-reactive orbs</string>
+    <string name="preset_subtitle_mini_city">Slanted roads &amp; tiny cars</string>
+    <string name="preset_subtitle_weather_time">Live sun, moon &amp; weather</string>
+    <string name="preset_subtitle_8bit_cat">Pastel pink pixels &amp; paws</string>
+    <string name="preset_subtitle_8bit_fox">Snowy white &amp; icy fox</string>
+    <string name="preset_subtitle_8bit_bunny">Warm caramel &amp; carrots</string>
+    <string name="preset_subtitle_8bit_snake">Emerald pixels &amp; leaves</string>
+
+    <string name="preset_title_bubbles">Interactive Bubbles</string>
+    <string name="preset_title_mini_city">Cutesy Mini-City</string>
+    <string name="preset_title_weather_time">Weather &amp; Sky</string>
+    <string name="preset_title_8bit_cat">8-Bit Cat</string>
+    <string name="preset_title_8bit_fox">8-Bit White Fox</string>
+    <string name="preset_title_8bit_bunny">8-Bit Bunny</string>
+    <string name="preset_title_8bit_snake">8-Bit Snake</string>
+
+    <string name="appearance_auto_seasonal_title">Adaptive seasonal theme</string>
+    <string name="appearance_auto_seasonal_desc">Automatically picks the preset matching date, holidays &amp; season</string>
+    <string name="appearance_auto_seasonal_active_fmt">Currently active: %1$s</string>
+    <string name="appearance_bubbles_battery_hint">Note: Interactive animations may use slightly more performance/battery.</string>
+    <string name="appearance_weather_style_title">Weather &amp; sky style</string>
+    <string name="appearance_weather_cute_2d">Cute 2D</string>
+    <string name="appearance_weather_realistic">Realistic</string>
+    <string name="appearance_weather_location_granted">Live weather synced via coarse location &amp; Open-Meteo</string>
+    <string name="appearance_weather_location_fallback">Time fallback active (06:30–19:30 sun/moon arc, no location needed)</string>
+    <string name="appearance_weather_grant_location">Use coarse location for live weather</string>
+    <string name="appearance_weather_refresh">Refresh weather</string>
+    <string name="appearance_gaming_led_title">Gaming LED accent color</string>
+    <string name="appearance_gaming_led_desc">Drives all LED highlights, buttons, sliders, and glass glow edges.</string>
+    <string name="appearance_8bit_variant_title">8-Bit color variant</string>
+    <string name="appearance_8bit_pink">Pastel Pink</string>
+    <string name="appearance_8bit_blue">Pastel Blue</string>
+    <string name="appearance_8bit_pink_short">Pink</string>
+    <string name="appearance_8bit_blue_short">Blue</string>
+
+    <!-- Notifications & Full-Screen Alarm -->
+    <string name="notif_channel_standard_name">Task Reminders</string>
+    <string name="notif_channel_standard_desc">Reminders for due tasks and helpful nudges</string>
+    <string name="notif_channel_intensive_name">Anti-Ignore Power Alarms</string>
+    <string name="notif_channel_intensive_desc">Urgent full-screen alarms with sound and strong vibration in Intensive Mode</string>
+    <string name="notif_action_complete">Complete</string>
+    <string name="notif_action_snooze">Snooze (%1$d min)</string>
+    <string name="notif_action_dismiss">Dismiss</string>
+    <string name="notif_due_at">Due at %1$s</string>
+    <string name="notif_standard_title_snoozed">Reminder (snoozed %1$dx)</string>
+    <string name="notif_standard_default_body">Task due now — complete it or snooze with intention.</string>
+    <string name="notif_escalating_title_snoozed">Urgent (snoozed %1$dx): %2$s</string>
+    <string name="notif_escalating_title_due">Anti-Ignore Alarm: %1$s</string>
+    <string name="notif_escalating_body_header">Intensive Mode active</string>
+    <string name="notif_escalating_body_snoozed"> · Already snoozed %1$dx</string>
+    <string name="notif_escalating_body_footer"> — complete now or snooze intentionally.</string>
+
+    <string name="alarm_badge_snoozed">ANTI-IGNORE POWER · SNOOZED %1$dx</string>
+    <string name="alarm_badge_due">ANTI-IGNORE POWER · DUE NOW</string>
+    <string name="alarm_due_priority">Due: %1$s · %2$s</string>
+    <string name="alarm_complete_now">Complete now (✓)</string>
+    <string name="alarm_snooze_prompt">Or snooze intentionally:</string>
+    <string name="alarm_snooze_cta">Snooze intentionally (%1$d min)</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_language_pill">Language</string>
+    <string name="onboarding_start_cta">Let\'s go!</string>
+    <string name="onboarding_welcome_title">Welcome to SnowDo\'s</string>
+    <string name="onboarding_welcome_body">Set up your key daily and focus routines in seconds — calm, clear, and clutter-free.</string>
+    <string name="onboarding_language_prompt">Choose your language</string>
+    <string name="onboarding_theme_title">Choose your theme</string>
+    <string name="onboarding_theme_subtitle">Tap any preset to preview background and accent colors live.</string>
+    <string name="onboarding_templates_title">What do you need help with?</string>
+    <string name="onboarding_templates_subtitle">Pick as many routines as you like — we\'ll add them as recurring tasks ready for you.</string>
+    <string name="onboarding_selected_cd">Selected</string>
+    <string name="onboarding_about_title">About SnowDo\'s</string>
+    <string name="onboarding_about_p1">This app grew out of a personal wish to bring more structure, calm, and reliable habits into everyday life.</string>
+    <string name="onboarding_about_p2">It was built with the help of Google Antigravity, alongside a lot of personal care, dedication, and attention to every interaction.</string>
+    <string name="onboarding_about_p3">If SnowDo\'s helps you day to day, a positive rating, kind comment, or recommendation means the world!</string>
+    <string name="onboarding_feedback_title">Rating &amp; Recommendation</string>
+    <string name="onboarding_feedback_body">Happy with SnowDo\'s? Leave a positive rating, share nice comments, or recommend it to friends — thank you!</string>
+    <string name="onboarding_ready_title">Have fun with SnowDo\'s!</string>
+    <string name="onboarding_ready_subtitle">Thanks for installing and wishing you calm focus every day!</string>
+    <string name="onboarding_start_tutorial_cta">Start tutorial</string>
+    <string name="onboarding_start_no_tutorial_cta">Start without tutorial</string>
+    <plurals name="onboarding_ready_selected_summary">
+        <item quantity="one">%1$d recurring routine selected and will be added for you right as you start.</item>
+        <item quantity="other">%1$d recurring routines selected and will be added for you right as you start.</item>
+    </plurals>
+    <string name="onboarding_ready_empty_summary">You\'ll start with a clean slate — tap the + button anytime to add tasks.</string>
+    <string name="onboarding_contact_placeholder">Questions or feedback? Reach out at: [Contact coming soon]</string>
+
+    <!-- Onboarding Routine Categories & Templates -->
+    <string name="onboarding_cat_body_daily">Body &amp; Daily Care</string>
+    <string name="onboarding_cat_order">Home &amp; Order</string>
+    <string name="onboarding_cat_focus_duties">Focus &amp; Goals</string>
+
+    <string name="template_shower_title">Shower routine</string>
+    <string name="template_shower_notes">Regular reset to feel fresh and energized</string>
+    <string name="template_meals_title">Meal schedule</string>
+    <string name="template_meals_notes">Take mindful time for a proper meal</string>
+    <string name="template_hydrate_title">Hydration reminder</string>
+    <string name="template_hydrate_notes">A glass of water for focus and energy</string>
+    <string name="template_brush_teeth_title">Brush teeth</string>
+    <string name="template_brush_teeth_notes">Wrap up your evening care routine</string>
+    <string name="template_bedtime_title">Wind down for bed</string>
+    <string name="template_bedtime_notes">Put screens away and get ready to sleep</string>
+    <string name="template_tidy_up_title">Quick tidy-up</string>
+    <string name="template_tidy_up_notes">10-minute reset to keep your space clear</string>
+    <string name="template_laundry_title">Laundry &amp; chores</string>
+    <string name="template_laundry_notes">Collect, wash, and fold laundry</string>
+    <string name="template_trash_title">Take out trash</string>
+    <string name="template_trash_notes">Empty general waste, paper, or organics on time</string>
+    <string name="template_study_title">Study / Homework</string>
+    <string name="template_study_notes">Dedicated distraction-free study block</string>
+    <string name="template_project_title">Deep focus session</string>
+    <string name="template_project_notes">Work steadily on an important goal</string>
+    <string name="template_daily_plan_title">Daily plan check-in</string>
+    <string name="template_daily_plan_notes">Quick review of today\'s priorities and schedule</string>
+    <string name="template_movement_title">Movement break</string>
+    <string name="template_movement_notes">Stand up, stretch, or get a breath of fresh air</string>
+
+    <!-- Home Screen Widget -->
+    <string name="widget_tasks_name">SnowDo\'s Tasks</string>
+    <string name="widget_tasks_description">Check off your newest tasks directly from the home screen along with your reliability score.</string>
+    <string name="widget_score_badge_format">%1$d%%</string>
+    <string name="widget_score_no_data">—</string>
+    <plurals name="widget_open_count">
+        <item quantity="one">%1$d open</item>
+        <item quantity="other">%1$d open</item>
+    </plurals>
+    <string name="widget_add_task_cd">Create new task</string>
+    <string name="widget_complete_task_cd">Complete task</string>
+    <string name="widget_empty_title">All caught up</string>
+    <string name="widget_empty_subtitle">Tap + to create a new task</string>
+    <string name="widget_more_tasks_format">+%1$d more open</string>
+    <string name="settings_widget_title">Home screen widget</string>
+    <string name="settings_widget_subtitle">App theme, Light, Dark &amp; Frosted Glass</string>
+    <string name="widget_config_title">Home Screen Widget</string>
+    <string name="widget_config_subtitle">Choose colors and surface transparency for your home screen.</string>
+    <string name="widget_config_preview">Preview</string>
+    <string name="widget_config_color_mode">Theme</string>
+    <string name="widget_color_follow_app">Follow app theme</string>
+    <string name="widget_color_follow_app_pill">App Theme</string>
+    <string name="widget_color_follow_app_hint">Live-syncs colors, theme pattern &amp; 8-bit style automatically.</string>
+    <string name="widget_color_light">Light</string>
+    <string name="widget_color_dark">Dark</string>
+    <string name="widget_config_surface_style">Surface</string>
+    <string name="widget_style_glass">Glass</string>
+    <string name="widget_style_solid">Solid</string>
+    <string name="widget_config_save">Apply</string>
+
+    <!-- Adaptive Account Tab Visibility & Compact Account Card -->
+    <string name="settings_account_tab_title">Account tab in nav bar</string>
+    <string name="settings_account_tab_dialog_title">Account tab in navigation bar</string>
+    <string name="settings_account_tab_auto">Automatic</string>
+    <string name="settings_account_tab_auto_option">Automatic — Show in bottom bar on wider displays, keep compact 3-tab bar on small screens</string>
+    <string name="settings_account_tab_always">Always show</string>
+    <string name="settings_account_tab_always_option">Always show — Keep all 4 tabs in the bottom navigation bar</string>
+    <string name="settings_account_tab_settings">Move to Settings</string>
+    <string name="settings_account_tab_settings_option">Move to Settings — Compact 3-tab bar with Account card inside Settings</string>
+    <string name="settings_account_card_title">Account &amp; Sync</string>
+    <string name="settings_account_card_status">Offline-first • Coming soon</string>
+
+    <!-- Interactive Spotlight Tutorial -->
+    <string name="tutorial_step_counter">%1$d / %2$d</string>
+    <string name="tutorial_next">Next</string>
+    <string name="tutorial_finish">Done!</string>
+    <string name="tutorial_skip">Skip</string>
+    <string name="tutorial_step_add_title">Create new tasks</string>
+    <string name="tutorial_step_add_desc">Tap the + button anytime to add tasks with priority, due time, and recurrence.</string>
+    <string name="tutorial_step_search_title">Search &amp; filter</string>
+    <string name="tutorial_step_search_desc">Search tasks by keyword or quickly switch between Active, Done, and All.</string>
+    <string name="tutorial_step_actions_title">Quick task actions</string>
+    <string name="tutorial_step_actions_desc">Tap ✓ on the left for points (+1..+3), or Z on the right to snooze and ✕ to dismiss.</string>
+    <string name="tutorial_step_stats_title">Score &amp; statistics</string>
+    <string name="tutorial_step_stats_desc">Your Reliability Score (%) and Done, Missed, and Ignored counters plus points history live here.</string>
+    <string name="tutorial_step_settings_title">Reminders &amp; customization</string>
+    <string name="tutorial_step_settings_desc">Adjust reminder lead-time, score rules, and your theme &amp; widget style.</string>
+</resources>

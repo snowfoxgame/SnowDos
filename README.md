@@ -1,5 +1,7 @@
 # SnowDo's
 
+![SnowDo's Feature Graphic](fastlane/metadata/android/en-US/images/featureGraphic.png)
+
 An offline-first, privacy-friendly Android task & habit planner built with Jetpack Compose, Material 3, Room, and custom dynamic themes.
 
 ## About this project

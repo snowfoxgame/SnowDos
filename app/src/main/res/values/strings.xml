@@ -126,10 +126,10 @@
     <string name="score_gauge_no_data">No scored tasks yet</string>
 
     <!-- Account Stub -->
-    <string name="account_title">Account – Coming soon</string>
+    <string name="account_title">Offline-First</string>
     <string name="account_unauthenticated">Not signed in yet.</string>
     <string name="account_authenticated">Signed in as %1$s</string>
-    <string name="account_stub_message">Account sign-in, cloud backup, and device sync are coming in a future update.</string>
+    <string name="account_stub_message">All your tasks, stats, and settings are stored locally on your device — no account required.</string>
     <string name="account_sync_title">Storage &amp; sync status</string>
     <string name="account_sync_local_only">Offline-first (stored locally on this device)</string>
     <string name="account_sync_idle">Ready to sync</string>
@@ -424,7 +424,7 @@
     <string name="settings_account_tab_settings">Move to Settings</string>
     <string name="settings_account_tab_settings_option">Move to Settings — Compact 3-tab bar with Account card inside Settings</string>
     <string name="settings_account_card_title">Account &amp; Sync</string>
-    <string name="settings_account_card_status">Offline-first • Coming soon</string>
+    <string name="settings_account_card_status">Offline-First · All data stored locally on your device</string>
 
     <!-- Interactive Spotlight Tutorial -->
     <string name="tutorial_step_counter">%1$d / %2$d</string>

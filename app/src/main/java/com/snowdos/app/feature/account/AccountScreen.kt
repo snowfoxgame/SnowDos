@@ -36,7 +36,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.snowdos.app.R
 import com.snowdos.app.core.designsystem.SnowDosThemeTokens
-import com.snowdos.app.core.designsystem.components.SnowGlassButton
 import com.snowdos.app.core.designsystem.components.SnowGlassCard
 import com.snowdos.app.core.designsystem.components.snowPressFeedback
 import com.snowdos.app.domain.model.AuthState
@@ -122,19 +121,6 @@ fun AccountScreen(
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
-            }
-
-            Spacer(modifier = Modifier.height(tokens.spacing.md))
-
-            SnowGlassButton(
-                onClick = {},
-                enabled = false
-            ) {
-                Text(
-                    text = stringResource(R.string.account_sign_in_cta),
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
             }
         }
     }

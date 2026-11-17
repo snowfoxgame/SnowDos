@@ -1,6 +1,7 @@
 package com.snowdos.app.feature.navigation
 
 import com.snowdos.app.domain.model.AccountTabVisibility
+import com.snowdos.app.domain.model.AppSettings
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -90,5 +91,17 @@ class TopLevelNavPolicyTest {
         // Start destination TASKS stays index 1 in both layouts (centered in 3-tab layout).
         assertEquals(1, fourTabs.indexOf(TopLevelDestination.TASKS))
         assertEquals(1, threeTabs.indexOf(TopLevelDestination.TASKS))
+    }
+
+    @Test
+    fun `default settings disable account tab in bottom navigation bar`() {
+        assertEquals(AccountTabVisibility.MOVE_TO_SETTINGS, AppSettings().accountTabVisibility)
+        assertFalse(
+            TopLevelNavPolicy.isAccountTabVisibleInNav(
+                visibility = AppSettings().accountTabVisibility,
+                screenWidthDp = 420,
+                fontScale = 1.0f
+            )
+        )
     }
 }

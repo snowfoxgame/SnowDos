@@ -126,10 +126,10 @@
     <string name="score_gauge_no_data">Noch keine bewerteten Aufgaben</string>
 
     <!-- Account Stub -->
-    <string name="account_title">Account – Bald verfügbar</string>
+    <string name="account_title">Offline-First</string>
     <string name="account_unauthenticated">Noch nicht angemeldet.</string>
     <string name="account_authenticated">Angemeldet als %1$s</string>
-    <string name="account_stub_message">Account-Login, Cloud-Backup und Geräte-Sync folgen in einer späteren Version.</string>
+    <string name="account_stub_message">Alle Aufgaben, Statistiken und Einstellungen werden lokal auf deinem Gerät gespeichert – kein Account nötig.</string>
     <string name="account_sync_title">Speicher- &amp; Sync-Status</string>
     <string name="account_sync_local_only">Offline-First (nur lokal auf diesem Gerät)</string>
     <string name="account_sync_idle">Bereit für Synchronisation</string>
@@ -424,7 +424,7 @@
     <string name="settings_account_tab_settings">In Settings verschieben</string>
     <string name="settings_account_tab_settings_option">In Settings verschieben — Kompakte 3er-Leiste mit Account-Card ganz oben in den Einstellungen</string>
     <string name="settings_account_card_title">Account &amp; Sync</string>
-    <string name="settings_account_card_status">Offline-First • Bald verfügbar</string>
+    <string name="settings_account_card_status">Offline-First · Alle Daten lokal auf deinem Gerät</string>
 
     <!-- Interactive Spotlight Tutorial -->
     <string name="tutorial_step_counter">%1$d / %2$d</string>

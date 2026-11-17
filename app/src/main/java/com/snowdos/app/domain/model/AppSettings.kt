@@ -122,7 +122,7 @@ data class AppSettings(
     val tabTransitionMode: TabTransitionMode = TabTransitionMode.ANIMATED,
     val widgetColorMode: WidgetColorMode = WidgetColorMode.FOLLOW_APP,
     val widgetSurfaceStyle: WidgetSurfaceStyle = WidgetSurfaceStyle.GLASS,
-    val accountTabVisibility: AccountTabVisibility = AccountTabVisibility.AUTO,
+    val accountTabVisibility: AccountTabVisibility = AccountTabVisibility.MOVE_TO_SETTINGS,
     val appLanguage: AppLanguage = AppLanguage.fromSystemLocale(),
     val hasCompletedOnboarding: Boolean = false,
     val reduceLiveBlur: Boolean = false,

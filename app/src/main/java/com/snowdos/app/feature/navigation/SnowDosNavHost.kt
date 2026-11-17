@@ -119,13 +119,7 @@ fun SnowDosNavHost(
         return
     }
 
-    val configuration = LocalConfiguration.current
-    val density = LocalDensity.current
-    val showAccountInNav = TopLevelNavPolicy.isAccountTabVisibleInNav(
-        visibility = accountTabVisibility,
-        screenWidthDp = configuration.screenWidthDp,
-        fontScale = density.fontScale
-    )
+    val showAccountInNav = false
     val activeDestinations = remember(showAccountInNav) {
         TopLevelNavPolicy.activeDestinations(showAccountInNav)
     }

@@ -38,6 +38,6 @@ class AppEntryViewModel @Inject constructor(
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5_000),
-            initialValue = AccountTabVisibility.AUTO
+            initialValue = AccountTabVisibility.MOVE_TO_SETTINGS
         )
 }

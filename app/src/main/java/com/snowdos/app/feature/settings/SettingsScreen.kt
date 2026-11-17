@@ -92,7 +92,6 @@ import com.snowdos.app.feature.tutorial.TutorialTargetId
 import com.snowdos.app.feature.tutorial.tutorialTarget
 import com.snowdos.app.feature.widget.WidgetAppearanceControls
 import com.snowdos.app.feature.widget.widgetSummaryText
-import com.snowdos.app.domain.model.AccountTabVisibility
 import com.snowdos.app.domain.model.AppLanguage
 import com.snowdos.app.domain.model.DismissBehavior
 import com.snowdos.app.domain.model.ScoreRulesConfig
@@ -114,7 +113,6 @@ private enum class ActiveSettingsDialog {
     SCORE_RULES,
     LANGUAGE,
     TAB_TRANSITION,
-    ACCOUNT_TAB_VISIBILITY,
     WIDGET
 }
 
@@ -752,46 +750,6 @@ fun SettingsScreen(
             )
         }
 
-        item(key = "account_tab_visibility", contentType = "action") {
-            val accountTabInteraction = remember { MutableInteractionSource() }
-            ListItem(
-                headlineContent = {
-                    Text(
-                        text = stringResource(R.string.settings_account_tab_title),
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                },
-                supportingContent = {
-                    Text(
-                        text = stringResource(
-                            when (settings.accountTabVisibility) {
-                                AccountTabVisibility.AUTO -> R.string.settings_account_tab_auto
-                                AccountTabVisibility.ALWAYS_SHOW -> R.string.settings_account_tab_always
-                                AccountTabVisibility.MOVE_TO_SETTINGS -> R.string.settings_account_tab_settings
-                            }
-                        ),
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                },
-                leadingContent = {
-                    Icon(Icons.Outlined.AccountCircle, contentDescription = null)
-                },
-                colors = transparentListItemColors,
-                modifier = Modifier
-                    .padding(horizontal = tokens.spacing.md, vertical = 4.dp)
-                    .snowPressFeedback(accountTabInteraction, pressedScale = 0.98f)
-                    .glassReadySurface(
-                        shape = RoundedCornerShape(tokens.radius.compactCard),
-                        alpha = tokens.surface.interactiveAlpha
-                    )
-                    .clickable(interactionSource = accountTabInteraction, indication = null) {
-                        activeDialog = ActiveSettingsDialog.ACCOUNT_TAB_VISIBILITY
-                    }
-            )
-        }
-
         item(key = "anti_ignore_toggle", contentType = "switch") {
             ListItem(
                 headlineContent = { Text(stringResource(R.string.settings_anti_ignore_title)) },
@@ -1098,29 +1056,6 @@ fun SettingsScreen(
                 },
                 onSelect = { mode ->
                     viewModel.onAction(SettingsAction.SetTabTransitionMode(mode))
-                    activeDialog = ActiveSettingsDialog.NONE
-                },
-                onDismiss = { activeDialog = ActiveSettingsDialog.NONE }
-            )
-        }
-
-        ActiveSettingsDialog.ACCOUNT_TAB_VISIBILITY -> {
-            SingleChoiceDialog(
-                visible = isDialogVisible,
-                title = stringResource(R.string.settings_account_tab_dialog_title),
-                options = AccountTabVisibility.entries,
-                selected = settings.accountTabVisibility,
-                labelFor = { mode ->
-                    stringResource(
-                        when (mode) {
-                            AccountTabVisibility.AUTO -> R.string.settings_account_tab_auto_option
-                            AccountTabVisibility.ALWAYS_SHOW -> R.string.settings_account_tab_always_option
-                            AccountTabVisibility.MOVE_TO_SETTINGS -> R.string.settings_account_tab_settings_option
-                        }
-                    )
-                },
-                onSelect = { visibility ->
-                    viewModel.onAction(SettingsAction.SetAccountTabVisibility(visibility))
                     activeDialog = ActiveSettingsDialog.NONE
                 },
                 onDismiss = { activeDialog = ActiveSettingsDialog.NONE }
